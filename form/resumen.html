@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resumen</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resumen</h1>
+    <div class="resumen-wrapper">
+      <div id="resumen"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Obtener el resumen almacenado en el almacenamiento de sesión
+    var resumen = sessionStorage.getItem("resumen");
+
+    // Mostrar el resumen en el elemento de resumen
+    document.getElementById("resumen").innerHTML = resumen;
+  </script>
+</body>
+</html>
